@@ -13,21 +13,21 @@ export const siteConfig: SiteConfig = {
 	subtitle: "zmblog",
 
 	// 站点 URL
-	site_url: "https://024729.xyz",
+	site_url: "https://blog.024729.xyz",
 
 	// 站点描述
 	description:
-		"这是一个使用 Astro 构建的个人博客，分享我的技术心得、学习笔记和生活点滴。欢迎来到我的博客，和我一起探索编程的世界！",
+		"子沐的个人博客，记录技术学习、项目实践、阅读思考和生活片段。",
 
 	// 站点关键词
 	keywords: [
 		"zmblog",
-		"Fuwari",
 		"Astro",
-		"ACGN",
 		"博客",
 		"技术博客",
 		"静态博客",
+		"学习笔记",
+		"项目实践",
 	],
 
 	// 主题色
@@ -57,7 +57,7 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		{
 			// 图标文件路径
-			src: "/favicon/favicon.ico",
+			src: "/favicon/cat-logo.svg",
 			// 可选，指定主题 'light' | 'dark'
 			// theme: "light",
 			// 可选，图标大小
@@ -75,8 +75,8 @@ export const siteConfig: SiteConfig = {
 		// 4. 网络图片: { type: "url", value: "https://example.com/logo.png", alt: "Logo" }
 		logo: {
 			type: "image",
-			value: "assets/images/firefly.png",
-			alt: "🍀",
+			value: "assets/images/cat-logo.svg",
+			alt: "小猫 Logo",
 		},
 		// 导航栏标题
 		title: "子沐的博客",
@@ -118,7 +118,7 @@ export const siteConfig: SiteConfig = {
 	// bangumi配置
 	bangumi: {
 		// Bangumi用户ID
-		userId: "1143164",
+		userId: "",
 		// 条目类型排序，数组中的类型将按顺序优先展示
 		// 可选值: "anime" | "book" | "music" | "game" | "real" (暂不支持"real"类型)
 		// 未列出的类型将按默认顺序排在后面
@@ -131,11 +131,11 @@ export const siteConfig: SiteConfig = {
 		// 友链页面开关
 		friends: true,
 		// 赞助页面开关
-		sponsor: true,
+		sponsor: false,
 		// 留言板页面开关，需要配置评论系统
 		guestbook: true,
 		// 番组计划页面开关，含追番、游戏、书籍和音乐，dev调试时只获取一页数据，build才会获取全部数据
-		bangumi: true,
+		bangumi: false,
 		// 相册页面开关
 		gallery: true,
 	},
