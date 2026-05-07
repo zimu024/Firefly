@@ -4,6 +4,7 @@ published: 2026-05-05
 description: "记录本站使用 Astro 和 Firefly 模板初始化、整理和发布前需要注意的配置。"
 tags: ["Astro", "Firefly", "静态博客", "部署"]
 category: 技术
+image: "../../assets/images/DesktopWallpaper/d3.avif"
 draft: false
 ---
 

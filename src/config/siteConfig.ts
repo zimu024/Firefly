@@ -16,8 +16,7 @@ export const siteConfig: SiteConfig = {
 	site_url: "https://blog.024729.xyz",
 
 	// 站点描述
-	description:
-		"子沐的个人博客，记录技术学习、项目实践、阅读思考和生活片段。",
+	description: "子沐的个人博客，记录技术学习、项目实践、阅读思考和生活片段。",
 
 	// 站点关键词
 	keywords: [
@@ -56,12 +55,7 @@ export const siteConfig: SiteConfig = {
 	// Favicon 配置
 	favicon: [
 		{
-			// 图标文件路径
-			src: "/favicon/cat-logo.svg",
-			// 可选，指定主题 'light' | 'dark'
-			// theme: "light",
-			// 可选，图标大小
-			// sizes: "32x32",
+			src: "/favicon/favicon.svg",
 		},
 	],
 
@@ -74,9 +68,9 @@ export const siteConfig: SiteConfig = {
 		// 3. 本地图片（src目录，自动优化但会增加构建时间，推荐）: { type: "image", value: "assets/images/logo.webp", alt: "Logo" }
 		// 4. 网络图片: { type: "url", value: "https://example.com/logo.png", alt: "Logo" }
 		logo: {
-			type: "image",
-			value: "assets/images/cat-logo.svg",
-			alt: "小猫 Logo",
+			type: "icon",
+			value: "material-symbols:code-blocks-outline-rounded",
+			alt: "Logo",
 		},
 		// 导航栏标题
 		title: "子沐的博客",
@@ -227,7 +221,7 @@ export const siteConfig: SiteConfig = {
 		// - "avif": 仅输出 AVIF 格式（最新技术，最小体积，目前兼容性较低）
 		// - "webp": 仅输出 WebP 格式（体积适中，兼容性好）
 		// - "both": 同时输出 AVIF 和 WebP（推荐，浏览器自动选择最佳格式）
-		formats: "webp",
+		formats: "both",
 		// 图片压缩质量 (1-100)，值越低体积越小但质量越差，推荐 70-85
 		quality: 85,
 		// 为特定域名的图片添加 referrerpolicy="no-referrer" 属性

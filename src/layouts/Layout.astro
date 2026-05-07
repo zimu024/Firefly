@@ -63,9 +63,6 @@ if (!banner || typeof banner !== "string" || banner.trim() === "") {
 	banner = getDefaultBackground();
 }
 
-// TODO don't use post cover as banner for now
-banner = getDefaultBackground();
-
 const enableBanner = backgroundWallpaper.mode === "banner";
 
 let pageTitle: string;
@@ -125,6 +122,7 @@ const siteLang = lang.replace("_", "-");
     )}
 
     <title>{pageTitle}</title>
+    <link rel="canonical" href={Astro.url.href} />
     <meta
       name="description"
       content={description || siteConfig.description || pageTitle}
@@ -530,6 +528,13 @@ const siteLang = lang.replace("_", "-");
         : []),
     ]}
   >
+    <a
+      id="skip-to-content"
+      href="#swup-container"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-(--primary) focus:text-white focus:rounded-lg focus:shadow-lg"
+    >
+      Skip to content
+    </a>
 
     <div id="progress-bar"></div>
 
@@ -677,49 +682,6 @@ const siteLang = lang.replace("_", "-");
   import { backgroundWallpaper, expressiveCodeConfig, siteConfig } from "@/config";
 
   /* Preload fonts */
-  // (async function() {
-  // 	try {
-  // 		await Promise.all([
-  // 			document.fonts.load("400 1em Roboto"),
-  // 			document.fonts.load("700 1em Roboto"),
-  // 		]);
-  // 		document.body.classList.remove("hidden");
-  // 	} catch (error) {
-  // 		console.log("Failed to load fonts:", error);
-  // 	}
-  // })();
-
-  /* TODO This is a temporary solution for style flicker issue when the transition is activated */
-  /* issue link: https://github.com/withastro/astro/issues/8711, the solution get from here too */
-  /* update: fixed in Astro 3.2.4 */
-  /*
-function disableAnimation() {
-	const css = document.createElement('style')
-	css.appendChild(
-		document.createTextNode(
-			`*{
-              -webkit-transition:none!important;
-              -moz-transition:none!important;
-              -o-transition:none!important;
-              -ms-transition:none!important;
-              transition:none!important
-              }`
-		)
-	)
-	document.head.appendChild(css)
-
-	return () => {
-		// Force restyle
-		;(() => window.getComputedStyle(document.body))()
-
-		// Wait for next tick before removing
-		setTimeout(() => {
-			document.head.removeChild(css)
-		}, 1)
-	}
-}
-*/
-
   const bannerEnabled = !!document.getElementById("wallpaper-wrapper");
   const stickyNavbar = siteConfig.navbar.stickyNavbar ?? false;
 
@@ -842,18 +804,6 @@ function disableAnimation() {
   }
 
   const setup = () => {
-    // TODO: temp solution to change the height of the banner
-    /*
-	window.swup.hooks.on('animation:out:start', () => {
-		const path = window.location.pathname
-		const body = document.querySelector('body')
-		if (path[path.length - 1] === '/' && !body.classList.contains('is-home')) {
-			body.classList.add('is-home')
-		} else if (path[path.length - 1] !== '/' && body.classList.contains('is-home')) {
-			body.classList.remove('is-home')
-		}
-	})
-*/
     window.swup.hooks.on("link:click", (_visit: any, { el }: { el: HTMLAnchorElement }) => {
       // Remove the delay for the first time page load
       document.documentElement.style.setProperty("--content-delay", "0ms");
@@ -887,6 +837,7 @@ function disableAnimation() {
       }
     });
     window.swup.hooks.on("content:replace", () => {
+      try {
       // 更新侧边栏组件的可见性（根据新页面的 URL）
       updateSidebarComponentsVisibility();
 
@@ -927,6 +878,9 @@ function disableAnimation() {
         }
       }
 
+      } catch (e) {
+        console.error("Swup content:replace error:", e);
+      }
     });
     window.swup.hooks.on("visit:start", (visit: { to: { url: string } }) => {
       // Start progress bar

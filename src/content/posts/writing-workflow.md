@@ -4,6 +4,7 @@ published: 2026-05-04
 description: "整理一套轻量的写作流程，让博客更新更容易持续。"
 tags: ["写作", "效率", "笔记"]
 category: 方法
+image: "../../assets/images/DesktopWallpaper/d5.avif"
 draft: false
 ---
 

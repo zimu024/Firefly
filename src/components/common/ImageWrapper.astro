@@ -56,15 +56,21 @@ const isLocal = !(
 );
 const isPublic = src.startsWith("/");
 
-// TODO temporary workaround for images dynamic import
+// Workaround: Astro's import.meta.glob doesn't support fully dynamic paths
 // https://github.com/withastro/astro/issues/3373
+// Scoped to content/ and assets/ directories for build performance
 let img: ImageMetadata | null = null;
 if (isLocal) {
-	const files = import.meta.glob<ImageMetadata>(
-		"../../**/*.{png,jpg,jpeg,webp,avif}",
-		{
-			import: "default",
-		},
+	const files = Object.assign(
+		{},
+		import.meta.glob<ImageMetadata>(
+			"../../content/**/*.{png,jpg,jpeg,webp,avif}",
+			{ import: "default" },
+		),
+		import.meta.glob<ImageMetadata>(
+			"../../assets/**/*.{png,jpg,jpeg,webp,avif}",
+			{ import: "default" },
+		),
 	);
 	let normalizedPath = path
 		.normalize(path.join("../../", basePath, src))

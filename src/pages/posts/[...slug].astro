@@ -122,10 +122,17 @@ const jsonLd = {
 		url: Astro.site,
 	},
 	datePublished: formatDateToYYYYMMDD(entry.data.published),
+	...(entry.data.updated && {
+		dateModified: formatDateToYYYYMMDD(entry.data.updated),
+	}),
 	inLanguage: entry.data.lang
 		? entry.data.lang.replace("_", "-")
 		: siteConfig.lang.replace("_", "-"),
-	// TODO include cover image here
+	...(posterCoverUrl && {
+		image: posterCoverUrl.startsWith("http")
+			? posterCoverUrl
+			: new URL(posterCoverUrl, Astro.site).href,
+	}),
 };
 
 const relatedPosts = await getRelatedPosts(entry, 5);

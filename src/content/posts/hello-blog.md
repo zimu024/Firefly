@@ -5,6 +5,7 @@ pinned: true
 description: "新博客的起点：记录为什么要搭建这个站点，以及之后准备写什么。"
 tags: ["博客", "写作", "计划"]
 category: 随笔
+image: "../../assets/images/DesktopWallpaper/d1.avif"
 draft: false
 ---
 

@@ -24,7 +24,7 @@ export const friendsPageConfig: FriendsPageConfig = {
 export const friendsConfig: FriendLink[] = [
 	{
 		title: "子沐的博客",
-		imgurl: "/favicon/cat-logo.svg",
+		imgurl: "/favicon/logo.jpg",
 		desc: "记录技术学习、项目实践、阅读思考和生活片段。",
 		siteurl: "https://blog.024729.xyz",
 		tags: ["Blog"],
