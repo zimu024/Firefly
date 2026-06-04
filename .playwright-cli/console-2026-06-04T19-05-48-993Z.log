@@ -1,0 +1,4 @@
+[       5ms] [LOG] 🧹 Cleaning up existing Spine model... @ http://localhost:4321/search/:12846
+[     140ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep) @ http://localhost:4321/@id/astro/runtime/client/dev-toolbar/entrypoint.js:0
+[     303ms] [LOG] Pagefind mock enabled in development mode. @ http://localhost:4321/src/components/controls/Search.svelte:152
+[     334ms] [LOG] All fonts have been loaded @ http://localhost:4321/src/components/features/FontManager.astro?astro&type=script&index=0&lang.ts:2

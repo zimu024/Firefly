@@ -1,0 +1,420 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#swup-container"
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - link "子沐的博客" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]:
+          - img [ref=e9]
+          - text: 子沐的博客
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - button "Search Panel" [ref=e13]:
+            - img [ref=e15]
+          - generic:
+            - generic:
+              - generic:
+                - img
+              - textbox "搜索"
+            - generic: 找不到相关结果。
+        - button "音乐" [ref=e17]:
+          - img [ref=e18]
+        - generic [ref=e21]:
+          - button "Light/Dark Mode" [ref=e22]:
+            - img [ref=e25]
+            - img [ref=e29]
+          - menu "Light/Dark Mode":
+            - menuitem "亮色":
+              - generic:
+                - img
+              - text: 亮色
+            - menuitem "暗色":
+              - generic:
+                - img
+              - text: 暗色
+            - menuitem "跟随系统":
+              - generic:
+                - img
+              - text: 跟随系统
+        - button "Menu" [ref=e31]:
+          - img [ref=e32]
+    - generic:
+      - region "音乐":
+        - generic:
+          - generic:
+            - generic:
+              - img
+              - img "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy"
+          - generic:
+            - generic:
+              - generic:
+                - heading "使一颗心免于哀伤" [level=3]
+              - button "歌词":
+                - img
+            - generic:
+              - paragraph: 知更鸟 / HOYO-MiX / Chevy
+            - generic:
+              - generic:
+                - generic: 0:00
+                - generic: /
+                - generic: 0:00
+              - generic:
+                - button "音量":
+                  - img
+                - generic:
+                  - slider "音量"
+        - generic:
+          - slider "播放进度"
+        - generic:
+          - button "切换播放模式":
+            - img
+          - button "上一首":
+            - img
+          - button "播放":
+            - img
+          - button "下一首":
+            - img
+          - button "列表":
+            - img
+        - generic:
+          - generic:
+            - generic:
+              - listbox "歌词":
+                - option "暂无歌词"
+        - generic:
+          - generic:
+            - generic:
+              - listbox "列表":
+                - option "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy":
+                  - generic:
+                    - img "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy"
+                    - generic:
+                      - img
+                  - generic:
+                    - generic: 使一颗心免于哀伤
+                    - generic: 知更鸟 / HOYO-MiX / Chevy
+        - generic:
+          - generic:
+            - img
+    - generic:
+      - generic:
+        - link "主页":
+          - /url: /
+          - generic:
+            - img
+            - text: 主页
+          - img
+      - generic:
+        - link "归档":
+          - /url: /archive/
+          - generic:
+            - img
+            - text: 归档
+          - img
+      - generic:
+        - link "友链":
+          - /url: /friends/
+          - generic:
+            - img
+            - text: 友链
+          - img
+      - generic:
+        - link "留言":
+          - /url: /guestbook/
+          - generic:
+            - img
+            - text: 留言
+          - img
+      - generic:
+        - generic:
+          - button "内容":
+            - generic:
+              - img
+              - text: 内容
+            - img
+          - generic:
+            - link "相册":
+              - /url: /gallery/
+              - generic:
+                - img
+                - text: 相册
+      - generic:
+        - link "关于我":
+          - /url: /about/
+          - generic:
+            - img
+            - text: 关于我
+          - img
+  - generic [ref=e35]:
+    - generic [ref=e36]:
+      - navigation "Category navigation" [ref=e37]:
+        - generic [ref=e39]:
+          - link "主页" [ref=e40] [cursor=pointer]:
+            - /url: /
+            - img [ref=e41]
+          - link "归档 7" [ref=e43] [cursor=pointer]:
+            - /url: /archive/
+            - text: 归档
+            - generic [ref=e44]: "7"
+          - generic [ref=e47]:
+            - link "技术 5" [ref=e48] [cursor=pointer]:
+              - /url: /archive/?category=%E6%8A%80%E6%9C%AF
+              - text: 技术
+              - generic [ref=e49]: "5"
+            - link "方法 1" [ref=e50] [cursor=pointer]:
+              - /url: /archive/?category=%E6%96%B9%E6%B3%95
+              - text: 方法
+              - generic [ref=e51]: "1"
+            - link "随笔 1" [ref=e52] [cursor=pointer]:
+              - /url: /archive/?category=%E9%9A%8F%E7%AC%94
+              - text: 随笔
+              - generic [ref=e53]: "1"
+      - main [ref=e54]:
+        - heading "搜索" [level=1] [ref=e55]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e61]:
+              - img [ref=e64]
+              - generic [ref=e66]: 搜索
+            - generic [ref=e68]:
+              - generic:
+                - generic:
+                  - img
+              - textbox "搜索" [ref=e69]
+          - generic [ref=e72]: 请输入搜索关键词。
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - link "Go to About Page" [ref=e77] [cursor=pointer]:
+          - /url: /about/
+          - generic:
+            - img
+          - img "Profile Image of the Author" [ref=e80]
+        - generic [ref=e81]:
+          - generic [ref=e82]: 子沐
+          - generic [ref=e84]: 记录学习、开发与生活里的小发现。
+          - generic [ref=e85]:
+            - link "首页" [ref=e86] [cursor=pointer]:
+              - /url: /
+              - img [ref=e87]
+            - link "归档" [ref=e89] [cursor=pointer]:
+              - /url: /archive/
+              - img [ref=e90]
+            - link "RSS" [ref=e92] [cursor=pointer]:
+              - /url: /rss/
+              - img [ref=e93]
+      - generic [ref=e95]:
+        - generic [ref=e97]: 公告
+        - generic [ref=e99]:
+          - generic [ref=e100]: 博客正在整理中，先把学习笔记和项目复盘慢慢沉淀下来。
+          - generic [ref=e101]:
+            - link "关于本站" [ref=e103] [cursor=pointer]:
+              - /url: /about/
+            - button "关闭" [ref=e104]:
+              - img [ref=e105]
+      - generic [ref=e107]:
+        - generic [ref=e109]: 音乐
+        - region "音乐" [ref=e111]:
+          - generic [ref=e112]:
+            - generic [ref=e114]:
+              - img [ref=e115]
+              - img "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy" [ref=e117]
+            - generic [ref=e118]:
+              - generic [ref=e119]:
+                - heading "使一颗心免于哀伤" [level=3] [ref=e121]
+                - button "歌词" [ref=e122]:
+                  - img [ref=e123]
+              - paragraph [ref=e126]: 知更鸟 / HOYO-MiX / Chevy
+              - generic [ref=e127]:
+                - generic [ref=e128]:
+                  - generic [ref=e129]: 0:00
+                  - generic [ref=e130]: /
+                  - generic [ref=e131]: 0:00
+                - generic [ref=e132]:
+                  - button "音量" [ref=e133]:
+                    - img [ref=e134]
+                  - slider "音量" [ref=e137] [cursor=pointer]
+          - slider "播放进度" [ref=e140] [cursor=pointer]
+          - generic [ref=e141]:
+            - button "切换播放模式" [ref=e142]:
+              - img [ref=e143]
+            - button "上一首" [ref=e145]:
+              - img [ref=e146]
+            - button "播放" [ref=e148]:
+              - img [ref=e149]
+            - button "下一首" [ref=e151]:
+              - img [ref=e152]
+            - button "列表" [ref=e154]:
+              - img [ref=e155]
+          - listbox "歌词" [ref=e158]:
+            - option "暂无歌词" [ref=e159]
+          - listbox "列表" [ref=e161]:
+            - option "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy" [ref=e162] [cursor=pointer]:
+              - generic [ref=e163]:
+                - img "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy" [ref=e164]
+                - img [ref=e166]
+              - generic [ref=e168]:
+                - generic [ref=e169]: 使一颗心免于哀伤
+                - generic [ref=e170]: 知更鸟 / HOYO-MiX / Chevy
+          - generic:
+            - generic:
+              - img
+      - generic [ref=e171]:
+        - generic [ref=e173]: 分类
+        - generic [ref=e174]:
+          - link "View all posts in the 技术 category" [ref=e175] [cursor=pointer]:
+            - /url: /archive/?category=%E6%8A%80%E6%9C%AF
+            - button "技术 5" [ref=e176]:
+              - generic [ref=e177]:
+                - generic [ref=e178]: 技术
+                - generic [ref=e179]: "5"
+          - link "View all posts in the 方法 category" [ref=e180] [cursor=pointer]:
+            - /url: /archive/?category=%E6%96%B9%E6%B3%95
+            - button "方法 1" [ref=e181]:
+              - generic [ref=e182]:
+                - generic [ref=e183]: 方法
+                - generic [ref=e184]: "1"
+          - link "View all posts in the 随笔 category" [ref=e185] [cursor=pointer]:
+            - /url: /archive/?category=%E9%9A%8F%E7%AC%94
+            - button "随笔 1" [ref=e186]:
+              - generic [ref=e187]:
+                - generic [ref=e188]: 随笔
+                - generic [ref=e189]: "1"
+      - generic [ref=e190]:
+        - generic [ref=e192]: 标签
+        - generic [ref=e194]:
+          - link "View all posts with the 笔记 tag" [ref=e195] [cursor=pointer]:
+            - /url: /archive/?tag=%E7%AC%94%E8%AE%B0
+            - text: 笔记
+          - link "View all posts with the 编程工具 tag" [ref=e196] [cursor=pointer]:
+            - /url: /archive/?tag=%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7
+            - text: 编程工具
+          - link "View all posts with the 博客 tag" [ref=e197] [cursor=pointer]:
+            - /url: /archive/?tag=%E5%8D%9A%E5%AE%A2
+            - text: 博客
+          - link "View all posts with the 部署 tag" [ref=e198] [cursor=pointer]:
+            - /url: /archive/?tag=%E9%83%A8%E7%BD%B2
+            - text: 部署
+          - link "View all posts with the 工作流 tag" [ref=e199] [cursor=pointer]:
+            - /url: /archive/?tag=%E5%B7%A5%E4%BD%9C%E6%B5%81
+            - text: 工作流
+          - link "View all posts with the 规范 tag" [ref=e200] [cursor=pointer]:
+            - /url: /archive/?tag=%E8%A7%84%E8%8C%83
+            - text: 规范
+          - link "View all posts with the 计划 tag" [ref=e201] [cursor=pointer]:
+            - /url: /archive/?tag=%E8%AE%A1%E5%88%92
+            - text: 计划
+          - link "View all posts with the 静态博客 tag" [ref=e202] [cursor=pointer]:
+            - /url: /archive/?tag=%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2
+            - text: 静态博客
+          - link "View all posts with the 类型系统 tag" [ref=e203] [cursor=pointer]:
+            - /url: /archive/?tag=%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F
+            - text: 类型系统
+          - link "View all posts with the 前端 tag" [ref=e204] [cursor=pointer]:
+            - /url: /archive/?tag=%E5%89%8D%E7%AB%AF
+            - text: 前端
+          - link "View all posts with the 前端开发 tag" [ref=e205] [cursor=pointer]:
+            - /url: /archive/?tag=%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91
+            - text: 前端开发
+          - link "View all posts with the 效率 tag" [ref=e206] [cursor=pointer]:
+            - /url: /archive/?tag=%E6%95%88%E7%8E%87
+            - text: 效率
+          - link "View all posts with the 协作 tag" [ref=e207] [cursor=pointer]:
+            - /url: /archive/?tag=%E5%8D%8F%E4%BD%9C
+            - text: 协作
+          - link "View all posts with the 写作 tag" [ref=e208] [cursor=pointer]:
+            - /url: /archive/?tag=%E5%86%99%E4%BD%9C
+            - text: 写作
+          - link "View all posts with the 性能优化 tag" [ref=e209] [cursor=pointer]:
+            - /url: /archive/?tag=%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96
+            - text: 性能优化
+          - link "View all posts with the 总结 tag" [ref=e210] [cursor=pointer]:
+            - /url: /archive/?tag=%E6%80%BB%E7%BB%93
+            - text: 总结
+          - link "View all posts with the AI tag" [ref=e211] [cursor=pointer]:
+            - /url: /archive/?tag=AI
+            - text: AI
+          - link "View all posts with the Astro tag" [ref=e212] [cursor=pointer]:
+            - /url: /archive/?tag=Astro
+            - text: Astro
+          - link "View all posts with the Firefly tag" [ref=e213] [cursor=pointer]:
+            - /url: /archive/?tag=Firefly
+            - text: Firefly
+          - link "View all posts with the Git tag" [ref=e214] [cursor=pointer]:
+            - /url: /archive/?tag=Git
+            - text: Git
+          - link "View all posts with the Lighthouse tag" [ref=e215] [cursor=pointer]:
+            - /url: /archive/?tag=Lighthouse
+            - text: Lighthouse
+          - link "View all posts with the TypeScript tag" [ref=e216] [cursor=pointer]:
+            - /url: /archive/?tag=TypeScript
+            - text: TypeScript
+          - link "View all posts with the Web tag" [ref=e217] [cursor=pointer]:
+            - /url: /archive/?tag=Web
+            - text: Web
+        - button "更多" [ref=e219]:
+          - generic [ref=e220]:
+            - img [ref=e221]
+            - generic [ref=e223]: 更多
+      - generic [ref=e224]:
+        - generic [ref=e226]: 站点统计
+        - generic [ref=e228]:
+          - generic [ref=e229]:
+            - generic [ref=e230]:
+              - img [ref=e232]
+              - generic [ref=e234]: 文章
+            - generic [ref=e236]: "7"
+          - generic [ref=e237]:
+            - generic [ref=e238]:
+              - img [ref=e240]
+              - generic [ref=e242]: 分类
+            - generic [ref=e244]: "3"
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - img [ref=e248]
+              - generic [ref=e250]: 标签
+            - generic [ref=e252]: "23"
+          - generic [ref=e253]:
+            - generic [ref=e254]:
+              - img [ref=e256]
+              - generic [ref=e258]: 总字数
+            - generic [ref=e260]: 4,663
+          - generic [ref=e261]:
+            - generic [ref=e262]:
+              - img [ref=e264]
+              - generic [ref=e266]: 运行时长
+            - generic [ref=e267]:
+              - generic [ref=e268]: "30"
+              - generic [ref=e269]: 天
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - img [ref=e273]
+              - generic [ref=e275]: 最后活动
+            - generic [ref=e276]:
+              - generic [ref=e277]: "28"
+              - generic [ref=e278]: 天前
+    - generic [ref=e282]:
+      - generic [ref=e283]:
+        - text: © 2026 子沐. All Rights Reserved. /
+        - link "RSS" [ref=e284] [cursor=pointer]:
+          - /url: /rss.xml
+        - text: /
+        - link "Sitemap" [ref=e285] [cursor=pointer]:
+          - /url: /sitemap-index.xml
+      - generic [ref=e286]:
+        - text: Powered by
+        - link "Astro" [ref=e287] [cursor=pointer]:
+          - /url: https://astro.build
+        - text: "&"
+        - link "Firefly" [ref=e288] [cursor=pointer]:
+          - /url: https://github.com/CuteLeaf/Firefly
+  - generic:
+    - generic:
+      - generic:
+        - button "Table of Contents":
+          - img
+    - button "主页" [ref=e290]:
+      - img [ref=e291]
+    - generic:
+      - button "Back to Top":
+        - img

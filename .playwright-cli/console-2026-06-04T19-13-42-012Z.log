@@ -1,0 +1,13 @@
+[       5ms] [LOG] 🧹 Cleaning up existing Spine model... @ http://localhost:4321/posts/hello-blog/:14330
+[     333ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep) @ http://localhost:4321/@id/astro/runtime/client/dev-toolbar/entrypoint.js:0
+[     613ms] [LOG] Pagefind mock enabled in development mode. @ http://localhost:4321/src/components/controls/Search.svelte:152
+[     655ms] [LOG] All fonts have been loaded @ http://localhost:4321/src/components/features/FontManager.astro?astro&type=script&index=0&lang.ts:2
+[  131099ms] [LOG] 🧹 Cleaning up existing Spine model... @ http://localhost:4321/gallery/:12502
+[  132643ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep) @ http://localhost:4321/@id/astro/runtime/client/dev-toolbar/entrypoint.js:0
+[  133121ms] [LOG] Pagefind mock enabled in development mode. @ http://localhost:4321/src/components/controls/Search.svelte:152
+[  133142ms] [LOG] All fonts have been loaded @ http://localhost:4321/src/components/features/FontManager.astro?astro&type=script&index=0&lang.ts:2
+[  497069ms] [LOG] 🧹 Cleaning up existing Spine model... @ http://localhost:4321/gallery/:12323
+[  497916ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep) @ http://localhost:4321/@id/astro/runtime/client/dev-toolbar/entrypoint.js:0
+[  498452ms] [LOG] Pagefind mock enabled in development mode. @ http://localhost:4321/src/components/controls/Search.svelte:152
+[  498478ms] [LOG] All fonts have been loaded @ http://localhost:4321/src/components/features/FontManager.astro?astro&type=script&index=0&lang.ts:2
+[  613676ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4321/@vite/client:1598

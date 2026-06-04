@@ -1,0 +1,11 @@
+[     544ms] [LOG] 🧹 Cleaning up existing Spine model... @ http://localhost:4321/posts/hello-blog/:14330
+[    1954ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep) @ http://localhost:4321/@id/astro/runtime/client/dev-toolbar/entrypoint.js:0
+[    2630ms] [LOG] Pagefind mock enabled in development mode. @ http://localhost:4321/src/components/controls/Search.svelte:152
+[    2687ms] [LOG] [Twikoo] 初始化配置: {envId: https://twikoo.vercel.app, lang: zh-CN, visitorCount: true, el: #tcomment, path: /friends} @ http://localhost:4321/friends/:10989
+[    2737ms] [LOG] [Twikoo] 初始化完成 @ http://localhost:4321/friends/:10994
+[    2768ms] [LOG] All fonts have been loaded @ http://localhost:4321/src/components/features/FontManager.astro?astro&type=script&index=0&lang.ts:2
+[    3452ms] [ERROR] Access to XMLHttpRequest at 'https://twikoo.vercel.app/' from origin 'http://localhost:4321' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: Redirect is not allowed for a preflight request. @ http://localhost:4321/friends/:0
+[    3457ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://twikoo.vercel.app/:0
+[    3457ms] [ERROR] Access to XMLHttpRequest at 'https://twikoo.vercel.app/' from origin 'http://localhost:4321' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: Redirect is not allowed for a preflight request. @ http://localhost:4321/friends/:0
+[    3457ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://twikoo.vercel.app/:0
+[    3477ms] 0

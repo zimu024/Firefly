@@ -1,0 +1,11 @@
+[       3ms] [LOG] 🧹 Cleaning up existing Spine model... @ http://localhost:4321/about/:12052
+[     104ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep) @ http://localhost:4321/@id/astro/runtime/client/dev-toolbar/entrypoint.js:0
+[     362ms] [LOG] [Twikoo] 初始化配置: {envId: https://twikoo.vercel.app, lang: zh-CN, visitorCount: true, el: #tcomment, path: /posts/hello-blog} @ http://localhost:4321/posts/hello-blog/:13130
+[     386ms] [LOG] [Twikoo] 初始化完成 @ http://localhost:4321/posts/hello-blog/:13135
+[     392ms] [LOG] Pagefind mock enabled in development mode. @ http://localhost:4321/src/components/controls/Search.svelte:152
+[     409ms] [LOG] All fonts have been loaded @ http://localhost:4321/src/components/features/FontManager.astro?astro&type=script&index=0&lang.ts:2
+[     809ms] [ERROR] Access to XMLHttpRequest at 'https://twikoo.vercel.app/' from origin 'http://localhost:4321' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: Redirect is not allowed for a preflight request. @ http://localhost:4321/posts/hello-blog/:0
+[     812ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://twikoo.vercel.app/:0
+[     813ms] [ERROR] Access to XMLHttpRequest at 'https://twikoo.vercel.app/' from origin 'http://localhost:4321' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: Redirect is not allowed for a preflight request. @ http://localhost:4321/posts/hello-blog/:0
+[     814ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://twikoo.vercel.app/:0
+[     814ms] 0

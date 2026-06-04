@@ -1,0 +1,667 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#swup-container"
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - link "子沐的博客" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]:
+          - img [ref=e9]
+          - text: 子沐的博客
+      - generic [ref=e11]:
+        - link "主页" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e14]:
+            - img [ref=e15]
+            - text: 主页
+        - link "归档" [ref=e18] [cursor=pointer]:
+          - /url: /archive/
+          - generic [ref=e19]:
+            - img [ref=e20]
+            - text: 归档
+        - link "友链" [ref=e23] [cursor=pointer]:
+          - /url: /friends/
+          - generic [ref=e24]:
+            - img [ref=e25]
+            - text: 友链
+        - link "留言" [ref=e28] [cursor=pointer]:
+          - /url: /guestbook/
+          - generic [ref=e29]:
+            - img [ref=e30]
+            - text: 留言
+        - button "内容" [ref=e33]:
+          - generic [ref=e34]:
+            - img [ref=e35]
+            - text: 内容
+          - img [ref=e37]
+        - link "关于我" [ref=e40] [cursor=pointer]:
+          - /url: /about/
+          - generic [ref=e41]:
+            - img [ref=e42]
+            - text: 关于我
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - generic:
+              - img
+            - textbox "搜索" [ref=e47]
+          - generic:
+            - generic: 找不到相关结果。
+        - button "音乐" [ref=e48]:
+          - img [ref=e49]
+        - generic [ref=e52]:
+          - button "Light/Dark Mode" [ref=e53]:
+            - img [ref=e56]
+            - img [ref=e60]
+          - menu "Light/Dark Mode":
+            - menuitem "亮色":
+              - generic:
+                - img
+              - text: 亮色
+            - menuitem "暗色":
+              - generic:
+                - img
+              - text: 暗色
+            - menuitem "跟随系统":
+              - generic:
+                - img
+              - text: 跟随系统
+    - generic:
+      - region "音乐":
+        - generic:
+          - generic:
+            - generic:
+              - img
+              - img "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy"
+          - generic:
+            - generic:
+              - generic:
+                - heading "使一颗心免于哀伤" [level=3]
+              - button "歌词":
+                - img
+            - generic:
+              - paragraph: 知更鸟 / HOYO-MiX / Chevy
+            - generic:
+              - generic:
+                - generic: 0:00
+                - generic: /
+                - generic: 0:00
+              - generic:
+                - button "音量":
+                  - img
+                - generic:
+                  - slider "音量"
+        - generic:
+          - slider "播放进度"
+        - generic:
+          - button "切换播放模式":
+            - img
+          - button "上一首":
+            - img
+          - button "播放":
+            - img
+          - button "下一首":
+            - img
+          - button "列表":
+            - img
+        - generic:
+          - generic:
+            - generic:
+              - listbox "歌词":
+                - option "暂无歌词"
+        - generic:
+          - generic:
+            - generic:
+              - listbox "列表":
+                - option "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy":
+                  - generic:
+                    - img "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy"
+                    - generic:
+                      - img
+                  - generic:
+                    - generic: 使一颗心免于哀伤
+                    - generic: 知更鸟 / HOYO-MiX / Chevy
+        - generic:
+          - generic:
+            - img
+    - generic:
+      - generic:
+        - link "主页":
+          - /url: /
+          - generic:
+            - img
+            - text: 主页
+          - img
+      - generic:
+        - link "归档":
+          - /url: /archive/
+          - generic:
+            - img
+            - text: 归档
+          - img
+      - generic:
+        - link "友链":
+          - /url: /friends/
+          - generic:
+            - img
+            - text: 友链
+          - img
+      - generic:
+        - link "留言":
+          - /url: /guestbook/
+          - generic:
+            - img
+            - text: 留言
+          - img
+      - generic:
+        - generic:
+          - button "内容":
+            - generic:
+              - img
+              - text: 内容
+            - img
+          - generic:
+            - link "相册":
+              - /url: /gallery/
+              - generic:
+                - img
+                - text: 相册
+      - generic:
+        - link "关于我":
+          - /url: /about/
+          - generic:
+            - img
+            - text: 关于我
+          - img
+  - generic [ref=e63]:
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - link "Go to About Page" [ref=e68] [cursor=pointer]:
+            - /url: /about/
+            - generic:
+              - img
+            - img "Profile Image of the Author" [ref=e71]
+          - generic [ref=e72]:
+            - generic [ref=e73]: 子沐
+            - generic [ref=e75]: 记录学习、开发与生活里的小发现。
+            - generic [ref=e76]:
+              - link "首页" [ref=e77] [cursor=pointer]:
+                - /url: /
+                - img [ref=e78]
+              - link "归档" [ref=e80] [cursor=pointer]:
+                - /url: /archive/
+                - img [ref=e81]
+              - link "RSS" [ref=e83] [cursor=pointer]:
+                - /url: /rss/
+                - img [ref=e84]
+        - generic [ref=e86]:
+          - generic [ref=e88]: 公告
+          - generic [ref=e90]:
+            - generic [ref=e91]: 博客正在整理中，先把学习笔记和项目复盘慢慢沉淀下来。
+            - generic [ref=e92]:
+              - link "关于本站" [ref=e94] [cursor=pointer]:
+                - /url: /about/
+              - button "关闭" [ref=e95]:
+                - img [ref=e96]
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - generic [ref=e101]: 音乐
+          - region "音乐" [ref=e103]:
+            - generic [ref=e104]:
+              - generic [ref=e106]:
+                - img [ref=e107]
+                - img "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy" [ref=e109]
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - heading "使一颗心免于哀伤" [level=3] [ref=e113]
+                  - button "歌词" [ref=e114]:
+                    - img [ref=e115]
+                - paragraph [ref=e118]: 知更鸟 / HOYO-MiX / Chevy
+                - generic [ref=e119]:
+                  - generic [ref=e120]:
+                    - generic [ref=e121]: 0:00
+                    - generic [ref=e122]: /
+                    - generic [ref=e123]: 0:00
+                  - generic [ref=e124]:
+                    - button "音量" [ref=e125]:
+                      - img [ref=e126]
+                    - slider "音量" [ref=e129] [cursor=pointer]
+            - slider "播放进度" [ref=e132] [cursor=pointer]
+            - generic [ref=e133]:
+              - button "切换播放模式" [ref=e134]:
+                - img [ref=e135]
+              - button "上一首" [ref=e137]:
+                - img [ref=e138]
+              - button "播放" [ref=e140]:
+                - img [ref=e141]
+              - button "下一首" [ref=e143]:
+                - img [ref=e144]
+              - button "列表" [ref=e146]:
+                - img [ref=e147]
+            - listbox "歌词" [ref=e150]:
+              - option "暂无歌词" [ref=e151]
+            - listbox "列表" [ref=e153]:
+              - option "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy" [ref=e154] [cursor=pointer]:
+                - generic [ref=e155]:
+                  - img "使一颗心免于哀伤 - 知更鸟 / HOYO-MiX / Chevy" [ref=e156]
+                  - img [ref=e158]
+                - generic [ref=e160]:
+                  - generic [ref=e161]: 使一颗心免于哀伤
+                  - generic [ref=e162]: 知更鸟 / HOYO-MiX / Chevy
+            - generic:
+              - generic:
+                - img
+        - generic [ref=e163]:
+          - generic [ref=e165]: 分类
+          - generic [ref=e166]:
+            - link "View all posts in the 技术 category" [ref=e167] [cursor=pointer]:
+              - /url: /archive/?category=%E6%8A%80%E6%9C%AF
+              - button "技术 5" [ref=e168]:
+                - generic [ref=e169]:
+                  - generic [ref=e170]: 技术
+                  - generic [ref=e171]: "5"
+            - link "View all posts in the 方法 category" [ref=e172] [cursor=pointer]:
+              - /url: /archive/?category=%E6%96%B9%E6%B3%95
+              - button "方法 1" [ref=e173]:
+                - generic [ref=e174]:
+                  - generic [ref=e175]: 方法
+                  - generic [ref=e176]: "1"
+            - link "View all posts in the 随笔 category" [ref=e177] [cursor=pointer]:
+              - /url: /archive/?category=%E9%9A%8F%E7%AC%94
+              - button "随笔 1" [ref=e178]:
+                - generic [ref=e179]:
+                  - generic [ref=e180]: 随笔
+                  - generic [ref=e181]: "1"
+        - generic [ref=e182]:
+          - generic [ref=e184]: 标签
+          - generic [ref=e186]:
+            - link "View all posts with the 笔记 tag" [ref=e187] [cursor=pointer]:
+              - /url: /archive/?tag=%E7%AC%94%E8%AE%B0
+              - text: 笔记
+            - link "View all posts with the 编程工具 tag" [ref=e188] [cursor=pointer]:
+              - /url: /archive/?tag=%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7
+              - text: 编程工具
+            - link "View all posts with the 博客 tag" [ref=e189] [cursor=pointer]:
+              - /url: /archive/?tag=%E5%8D%9A%E5%AE%A2
+              - text: 博客
+            - link "View all posts with the 部署 tag" [ref=e190] [cursor=pointer]:
+              - /url: /archive/?tag=%E9%83%A8%E7%BD%B2
+              - text: 部署
+            - link "View all posts with the 工作流 tag" [ref=e191] [cursor=pointer]:
+              - /url: /archive/?tag=%E5%B7%A5%E4%BD%9C%E6%B5%81
+              - text: 工作流
+            - link "View all posts with the 规范 tag" [ref=e192] [cursor=pointer]:
+              - /url: /archive/?tag=%E8%A7%84%E8%8C%83
+              - text: 规范
+            - link "View all posts with the 计划 tag" [ref=e193] [cursor=pointer]:
+              - /url: /archive/?tag=%E8%AE%A1%E5%88%92
+              - text: 计划
+            - link "View all posts with the 静态博客 tag" [ref=e194] [cursor=pointer]:
+              - /url: /archive/?tag=%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2
+              - text: 静态博客
+            - link "View all posts with the 类型系统 tag" [ref=e195] [cursor=pointer]:
+              - /url: /archive/?tag=%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F
+              - text: 类型系统
+            - link "View all posts with the 前端 tag" [ref=e196] [cursor=pointer]:
+              - /url: /archive/?tag=%E5%89%8D%E7%AB%AF
+              - text: 前端
+            - link "View all posts with the 前端开发 tag" [ref=e197] [cursor=pointer]:
+              - /url: /archive/?tag=%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91
+              - text: 前端开发
+            - link "View all posts with the 效率 tag" [ref=e198] [cursor=pointer]:
+              - /url: /archive/?tag=%E6%95%88%E7%8E%87
+              - text: 效率
+            - link "View all posts with the 协作 tag" [ref=e199] [cursor=pointer]:
+              - /url: /archive/?tag=%E5%8D%8F%E4%BD%9C
+              - text: 协作
+            - link "View all posts with the 写作 tag" [ref=e200] [cursor=pointer]:
+              - /url: /archive/?tag=%E5%86%99%E4%BD%9C
+              - text: 写作
+            - link "View all posts with the 性能优化 tag" [ref=e201] [cursor=pointer]:
+              - /url: /archive/?tag=%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96
+              - text: 性能优化
+            - link "View all posts with the 总结 tag" [ref=e202] [cursor=pointer]:
+              - /url: /archive/?tag=%E6%80%BB%E7%BB%93
+              - text: 总结
+            - link "View all posts with the AI tag" [ref=e203] [cursor=pointer]:
+              - /url: /archive/?tag=AI
+              - text: AI
+            - link "View all posts with the Astro tag" [ref=e204] [cursor=pointer]:
+              - /url: /archive/?tag=Astro
+              - text: Astro
+            - link "View all posts with the Firefly tag" [ref=e205] [cursor=pointer]:
+              - /url: /archive/?tag=Firefly
+              - text: Firefly
+            - link "View all posts with the Git tag" [ref=e206] [cursor=pointer]:
+              - /url: /archive/?tag=Git
+              - text: Git
+            - link "View all posts with the Lighthouse tag" [ref=e207] [cursor=pointer]:
+              - /url: /archive/?tag=Lighthouse
+              - text: Lighthouse
+            - link "View all posts with the TypeScript tag" [ref=e208] [cursor=pointer]:
+              - /url: /archive/?tag=TypeScript
+              - text: TypeScript
+            - link "View all posts with the Web tag" [ref=e209] [cursor=pointer]:
+              - /url: /archive/?tag=Web
+              - text: Web
+          - button "更多" [ref=e211]:
+            - generic [ref=e212]:
+              - img [ref=e213]
+              - generic [ref=e215]: 更多
+    - generic [ref=e216]:
+      - navigation "Category navigation" [ref=e217]:
+        - generic [ref=e219]:
+          - link "主页" [ref=e220] [cursor=pointer]:
+            - /url: /
+            - img [ref=e221]
+          - link "归档 7" [ref=e223] [cursor=pointer]:
+            - /url: /archive/
+            - text: 归档
+            - generic [ref=e224]: "7"
+          - generic [ref=e227]:
+            - link "技术 5" [ref=e228] [cursor=pointer]:
+              - /url: /archive/?category=%E6%8A%80%E6%9C%AF
+              - text: 技术
+              - generic [ref=e229]: "5"
+            - link "方法 1" [ref=e230] [cursor=pointer]:
+              - /url: /archive/?category=%E6%96%B9%E6%B3%95
+              - text: 方法
+              - generic [ref=e231]: "1"
+            - link "随笔 1" [ref=e232] [cursor=pointer]:
+              - /url: /archive/?category=%E9%9A%8F%E7%AC%94
+              - text: 随笔
+              - generic [ref=e233]: "1"
+      - main [ref=e234]:
+        - heading "第一篇博客：从这里开始" [level=1] [ref=e235]
+        - generic [ref=e236]:
+          - generic [ref=e238]:
+            - generic [ref=e239]:
+              - generic [ref=e240]:
+                - img [ref=e242]
+                - generic [ref=e244]: 376 字
+              - generic [ref=e245]:
+                - img [ref=e247]
+                - generic [ref=e249]: 2 分钟
+            - generic [ref=e251]: 第一篇博客：从这里开始
+            - generic [ref=e253]:
+              - generic [ref=e254]:
+                - img [ref=e256]
+                - generic [ref=e258]: 2026-05-06
+              - generic [ref=e259]:
+                - img [ref=e261]
+                - link "View all posts in the 随笔 category" [ref=e264] [cursor=pointer]:
+                  - /url: /archive/?category=%E9%9A%8F%E7%AC%94
+                  - text: 随笔
+              - generic [ref=e265]:
+                - img [ref=e267]
+                - generic [ref=e269]:
+                  - link "View all posts with the 博客 tag" [ref=e270] [cursor=pointer]:
+                    - /url: /archive/?tag=%E5%8D%9A%E5%AE%A2
+                    - text: 博客
+                  - generic [ref=e271]: /
+                  - link "View all posts with the 写作 tag" [ref=e272] [cursor=pointer]:
+                    - /url: /archive/?tag=%E5%86%99%E4%BD%9C
+                    - text: 写作
+                  - generic [ref=e273]: /
+                  - link "View all posts with the 计划 tag" [ref=e274] [cursor=pointer]:
+                    - /url: /archive/?tag=%E8%AE%A1%E5%88%92
+                    - text: 计划
+              - generic [ref=e275]:
+                - img [ref=e277]
+                - generic [ref=e279]: 浏览量
+                - generic [ref=e280]: 加载中...
+            - generic [ref=e284]:
+              - paragraph [ref=e285]: 这个博客先从一篇简单的说明开始。
+              - paragraph [ref=e286]: 我希望这里不只是一个“搭好后放着”的网站，而是一个能够长期积累的地方。以后遇到值得记录的问题、学到的新知识、做过的小项目，都可以整理成文章放在这里。
+              - generic [ref=e287]:
+                - heading "为什么要写博客#" [level=2] [ref=e288]:
+                  - text: 为什么要写博客
+                  - link "#" [ref=e289] [cursor=pointer]:
+                    - /url: "#为什么要写博客"
+                - paragraph [ref=e290]: 很多问题在解决的时候看起来很清楚，过一段时间再回头就只剩下零散印象。写博客的价值，是把当时的判断、尝试、错误和结果保存下来。
+                - paragraph [ref=e291]: 对我来说，它至少有三个作用：
+                - list [ref=e292]:
+                  - listitem [ref=e293]: 把学习过程写清楚，避免重复踩坑
+                  - listitem [ref=e294]: 把项目经验沉淀下来，方便以后复盘
+                  - listitem [ref=e295]: 训练表达能力，让想法变得更准确
+              - generic [ref=e296]:
+                - heading "接下来会写什么#" [level=2] [ref=e297]:
+                  - text: 接下来会写什么
+                  - link "#" [ref=e298] [cursor=pointer]:
+                    - /url: "#接下来会写什么"
+                - paragraph [ref=e299]: 博客初期会先围绕几个方向更新：
+                - list [ref=e300]:
+                  - listitem [ref=e301]: 技术笔记：开发环境、框架使用、部署流程、常见问题
+                  - listitem [ref=e302]: 项目记录：需求拆解、实现方案、问题修复、上线总结
+                  - listitem [ref=e303]: 阅读整理：书籍、课程和文章里的重要观点
+                  - listitem [ref=e304]: 日常随笔：一些生活里的观察和阶段总结
+              - generic [ref=e305]:
+                - heading "关于更新节奏#" [level=2] [ref=e306]:
+                  - text: 关于更新节奏
+                  - link "#" [ref=e307] [cursor=pointer]:
+                    - /url: "#关于更新节奏"
+                - paragraph [ref=e308]: 我不会追求每天更新，但会尽量保持稳定。比起快速堆数量，更重要的是每篇文章都能在以后重新打开时仍然有用。
+                - paragraph [ref=e309]: 如果你刚好来到这里，欢迎从归档页或 RSS 订阅开始关注后续更新。
+            - generic [ref=e312]:
+              - generic [ref=e313]:
+                - img [ref=e315]
+                - generic [ref=e317]:
+                  - heading "文章分享" [level=3] [ref=e318]
+                  - paragraph [ref=e319]: 如果这篇文章对你有帮助，欢迎分享给更多人！
+              - button "Generate Share Poster" [ref=e322]:
+                - img [ref=e324]
+                - generic [ref=e326]: 分享
+            - generic [ref=e327]:
+              - generic [ref=e328]: 第一篇博客：从这里开始
+              - link "http://localhost:4321/posts/hello-blog/" [ref=e329] [cursor=pointer]:
+                - /url: http://localhost:4321/posts/hello-blog/
+              - generic [ref=e330]:
+                - generic [ref=e331]:
+                  - generic [ref=e332]: 作者
+                  - generic [ref=e333]: 子沐
+                - generic [ref=e334]:
+                  - generic [ref=e335]: 发布于
+                  - generic [ref=e336]: 2026-05-06
+                - generic [ref=e337]:
+                  - generic [ref=e338]: 许可协议
+                  - link "CC BY-NC-SA 4.0" [ref=e339] [cursor=pointer]:
+                    - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+              - img
+          - generic [ref=e340]:
+            - link "主页" [ref=e341] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e342]:
+                - img [ref=e343]
+                - generic [ref=e345]: 主页
+            - link "AI 辅助编程：我的实践与思考" [ref=e346] [cursor=pointer]:
+              - /url: /posts/ai-assisted-coding/
+              - generic [ref=e347]:
+                - generic [ref=e348]: AI 辅助编程：我的实践与思考
+                - img [ref=e349]
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - generic [ref=e352]:
+                - img [ref=e353]
+                - generic [ref=e355]: 相关文章
+                - generic [ref=e356]: 智能推荐
+              - link "1 我的博客写作流程 方法 整理一套轻量的写作流程，让博客更新更容易持续。" [ref=e357] [cursor=pointer]:
+                - /url: /posts/writing-workflow/
+                - generic [ref=e358]: "1"
+                - generic [ref=e359]:
+                  - generic [ref=e360]: 我的博客写作流程
+                  - generic [ref=e361]:
+                    - generic [ref=e362]: 方法
+                    - generic [ref=e363]: 整理一套轻量的写作流程，让博客更新更容易持续。
+                - img [ref=e364]
+              - link "2 AI 辅助编程：我的实践与思考 技术 记录过去半年使用 AI 编程工具的实践经验，从工具选择、使用技巧到效率提升的真实感受。" [ref=e365] [cursor=pointer]:
+                - /url: /posts/ai-assisted-coding/
+                - generic [ref=e366]: "2"
+                - generic [ref=e367]:
+                  - generic [ref=e368]: AI 辅助编程：我的实践与思考
+                  - generic [ref=e369]:
+                    - generic [ref=e370]: 技术
+                    - generic [ref=e371]: 记录过去半年使用 AI 编程工具的实践经验，从工具选择、使用技巧到效率提升的真实感受。
+                - img [ref=e372]
+              - link "3 前端性能优化实用清单 技术 一份可对照执行的性能优化清单，覆盖资源加载、渲染性能、图片优化和构建产物四个维度，每一项都附有具体操作和效果说明。" [ref=e373] [cursor=pointer]:
+                - /url: /posts/frontend-performance-checklist/
+                - generic [ref=e374]: "3"
+                - generic [ref=e375]:
+                  - generic [ref=e376]: 前端性能优化实用清单
+                  - generic [ref=e377]:
+                    - generic [ref=e378]: 技术
+                    - generic [ref=e379]: 一份可对照执行的性能优化清单，覆盖资源加载、渲染性能、图片优化和构建产物四个维度，每一项都附有具体操作和效果说明。
+                - img [ref=e380]
+              - link "4 Git 高效工作流与 Commit 规范 技术 从实际项目出发，整理一套清晰实用的 Git 工作流和提交信息规范，让团队协作和代码追溯不再混乱。" [ref=e381] [cursor=pointer]:
+                - /url: /posts/git-workflow-guide/
+                - generic [ref=e382]: "4"
+                - generic [ref=e383]:
+                  - generic [ref=e384]: Git 高效工作流与 Commit 规范
+                  - generic [ref=e385]:
+                    - generic [ref=e386]: 技术
+                    - generic [ref=e387]: 从实际项目出发，整理一套清晰实用的 Git 工作流和提交信息规范，让团队协作和代码追溯不再混乱。
+                - img [ref=e388]
+              - link "5 TypeScript 常用高级类型技巧 技术 整理日常开发中最实用的 TypeScript 类型技巧，从泛型约束、条件类型到工具类型，提升代码的类型安全性和可维护性。" [ref=e389] [cursor=pointer]:
+                - /url: /posts/typescript-advanced-types/
+                - generic [ref=e390]: "5"
+                - generic [ref=e391]:
+                  - generic [ref=e392]: TypeScript 常用高级类型技巧
+                  - generic [ref=e393]:
+                    - generic [ref=e394]: 技术
+                    - generic [ref=e395]: 整理日常开发中最实用的 TypeScript 类型技巧，从泛型约束、条件类型到工具类型，提升代码的类型安全性和可维护性。
+                - img [ref=e396]
+            - generic [ref=e397]:
+              - generic [ref=e398]:
+                - img [ref=e399]
+                - generic [ref=e401]: 随机文章
+                - generic [ref=e402]: 随机推荐
+              - link "1 这个博客是怎样搭起来的 技术 记录本站使用 Astro 和 Firefly 模板初始化、整理和发布前需要注意的配置。" [ref=e404] [cursor=pointer]:
+                - /url: /posts/how-this-blog-was-built/
+                - generic [ref=e405]: "1"
+                - generic [ref=e406]:
+                  - generic [ref=e407]: 这个博客是怎样搭起来的
+                  - generic [ref=e408]:
+                    - generic [ref=e409]: 技术
+                    - generic [ref=e410]: 记录本站使用 Astro 和 Firefly 模板初始化、整理和发布前需要注意的配置。
+                - img [ref=e411]
+          - generic [ref=e413]:
+            - generic:
+              - img
+            - generic [ref=e414]:
+              - heading "评论区" [level=3] [ref=e417]
+              - paragraph [ref=e418]: 分享你的想法，与大家交流讨论
+            - generic [ref=e420]:
+              - generic [ref=e421]:
+                - generic [ref=e422]:
+                  - generic [ref=e423]:
+                    - img [ref=e426]
+                    - generic [ref=e428]:
+                      - generic [ref=e429]:
+                        - generic [ref=e430]:
+                          - generic [ref=e431]: 昵称
+                          - textbox "必填" [ref=e432]
+                        - generic [ref=e433]:
+                          - generic [ref=e434]: 邮箱
+                          - textbox "必填" [ref=e435]
+                        - generic [ref=e436]:
+                          - generic [ref=e437]: 网址
+                          - textbox "选填" [ref=e438]
+                      - generic [ref=e439]:
+                        - textbox [ref=e440]
+                        - generic [ref=e441]: 0/500
+                  - generic [ref=e442]:
+                    - link [ref=e443] [cursor=pointer]:
+                      - /url: https://guides.github.com/features/mastering-markdown/
+                      - img [ref=e444]
+                    - button "预览" [ref=e446] [cursor=pointer]
+                    - button "发送" [disabled] [ref=e447]
+                - img [ref=e452]
+              - generic [ref=e454]:
+                - text: Powered by
+                - link "Twikoo" [ref=e455] [cursor=pointer]:
+                  - /url: https://twikoo.js.org
+                - text: v1.7.4
+    - generic [ref=e457]:
+      - generic [ref=e459]:
+        - generic [ref=e461]: 站点统计
+        - generic [ref=e463]:
+          - generic [ref=e464]:
+            - generic [ref=e465]:
+              - img [ref=e467]
+              - generic [ref=e469]: 文章
+            - generic [ref=e471]: "7"
+          - generic [ref=e472]:
+            - generic [ref=e473]:
+              - img [ref=e475]
+              - generic [ref=e477]: 分类
+            - generic [ref=e479]: "3"
+          - generic [ref=e480]:
+            - generic [ref=e481]:
+              - img [ref=e483]
+              - generic [ref=e485]: 标签
+            - generic [ref=e487]: "23"
+          - generic [ref=e488]:
+            - generic [ref=e489]:
+              - img [ref=e491]
+              - generic [ref=e493]: 总字数
+            - generic [ref=e495]: 4,663
+          - generic [ref=e496]:
+            - generic [ref=e497]:
+              - img [ref=e499]
+              - generic [ref=e501]: 运行时长
+            - generic [ref=e502]:
+              - generic [ref=e503]: "30"
+              - generic [ref=e504]: 天
+          - generic [ref=e505]:
+            - generic [ref=e506]:
+              - img [ref=e508]
+              - generic [ref=e510]: 最后活动
+            - generic [ref=e511]:
+              - generic [ref=e512]: "28"
+              - generic [ref=e513]: 天前
+      - generic [ref=e515]:
+        - generic [ref=e517]: 目录
+        - generic [ref=e520]:
+          - link "为什么要写博客" [ref=e521] [cursor=pointer]:
+            - /url: "#为什么要写博客"
+            - generic [ref=e522]: "1"
+            - generic [ref=e523]: 为什么要写博客
+          - link "接下来会写什么" [ref=e524] [cursor=pointer]:
+            - /url: "#接下来会写什么"
+            - generic [ref=e525]: "2"
+            - generic [ref=e526]: 接下来会写什么
+          - link "关于更新节奏" [ref=e527] [cursor=pointer]:
+            - /url: "#关于更新节奏"
+            - generic [ref=e528]: "3"
+            - generic [ref=e529]: 关于更新节奏
+    - generic [ref=e534]:
+      - generic [ref=e535]:
+        - text: © 2026 子沐. All Rights Reserved. /
+        - link "RSS" [ref=e536] [cursor=pointer]:
+          - /url: /rss.xml
+        - text: /
+        - link "Sitemap" [ref=e537] [cursor=pointer]:
+          - /url: /sitemap-index.xml
+      - generic [ref=e538]:
+        - text: Powered by
+        - link "Astro" [ref=e539] [cursor=pointer]:
+          - /url: https://astro.build
+        - text: "&"
+        - link "Firefly" [ref=e540] [cursor=pointer]:
+          - /url: https://github.com/CuteLeaf/Firefly
+  - generic:
+    - generic:
+      - generic:
+        - button "Table of Contents":
+          - img
+      - link "为什么要写博客":
+        - /url: "#为什么要写博客"
+        - generic: "1"
+        - generic: 为什么要写博客
+    - button "Scroll to comments" [ref=e542]:
+      - img [ref=e543]
+    - button "主页" [ref=e546]:
+      - img [ref=e547]
+    - generic:
+      - button "Back to Top":
+        - img
