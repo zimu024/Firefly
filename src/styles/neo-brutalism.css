@@ -187,6 +187,30 @@ body:has(#wallpaper-wrapper) #navbar > div {
   background: var(--primary) !important;
 }
 
+/* 导航项激活态高亮标记 */
+#navbar .btn-plain.navbar-active,
+#navbar .dropdown-trigger.navbar-active,
+#nav-menu-panel a.navbar-active,
+#nav-menu-panel button.navbar-active {
+  background: var(--nb-yellow) !important;
+  color: var(--nb-ink) !important;
+  border: 2px solid var(--nb-ink) !important;
+  box-shadow: 2.5px 2.5px 0px 0px var(--nb-ink) !important;
+  border-radius: 0.6rem !important;
+  opacity: 1 !important;
+  transform: translate(-1px, -1px);
+}
+
+:root.dark #navbar .btn-plain.navbar-active,
+:root.dark #navbar .dropdown-trigger.navbar-active,
+:root.dark #nav-menu-panel a.navbar-active,
+:root.dark #nav-menu-panel button.navbar-active {
+  background: var(--primary) !important;
+  color: var(--nb-ink) !important;
+  border: 2px solid var(--nb-ink) !important;
+  box-shadow: 2.5px 2.5px 0px 0px var(--nb-ink) !important;
+}
+
 #navbar a.navbar-logo {
   font-size: 1.45rem !important;
   letter-spacing: -0.03em !important;
@@ -672,11 +696,16 @@ select:focus {
 
 .custom-md blockquote {
   padding: 1.25rem 1.5rem !important;
-  border-left: 8px solid var(--nb-pink) !important;
+  border-left: 8px solid var(--nb-ink) !important;
+}
+
+.custom-md blockquote::before {
+  display: none !important;
+  content: none !important;
 }
 
 :root.dark .custom-md blockquote {
-  border-left: 8px solid var(--primary) !important;
+  border-left: 8px solid var(--nb-ink) !important;
 }
 
 /* 文章行内代码 */

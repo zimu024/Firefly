@@ -84,8 +84,39 @@ const search = async (keyword: string, isDesktop: boolean): Promise<void> => {
 				searchResults = await Promise.all(
 					response.results.map((item) => item.data()),
 				);
-			} else if (import.meta.env.DEV) {
-				searchResults = fakeResult;
+			} else {
+				// 在 DEV 模式下，或者 PROD 模式下 pagefind 没加载好时，我们 fetch 我们的 API 并进行本地搜索
+				try {
+					const response = await fetch(formatUrl('/api/allPostMeta.json'));
+					if (!response.ok) throw new Error("API response not ok");
+					const allPosts = await response.json();
+					const query = keyword.toLowerCase();
+					
+					// 高亮匹配项（类似于 Pagefind）
+					const highlightText = (text: string, q: string) => {
+						if (!text) return "";
+						const index = text.toLowerCase().indexOf(q);
+						if (index === -1) return text;
+						const before = text.slice(0, index);
+						const match = text.slice(index, index + q.length);
+						const after = text.slice(index + q.length);
+						return `${before}<mark>${match}</mark>${after}`;
+					};
+
+					searchResults = allPosts
+						.filter(post => 
+							post.title.toLowerCase().includes(query) || 
+							(post.description && post.description.toLowerCase().includes(query))
+						)
+						.map(post => ({
+							url: formatUrl(`/posts/${post.id}/`),
+							meta: { title: highlightText(post.title, query) },
+							excerpt: post.description ? highlightText(post.description, query) : ""
+						}));
+				} catch (e) {
+					console.error("Local search fallback failed, using fake results:", e);
+					searchResults = fakeResult;
+				}
 			}
 
 			result = searchResults;

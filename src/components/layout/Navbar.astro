@@ -267,6 +267,75 @@ function initSemifullScrollDetection() {
 // 将函数暴露到全局对象，供页面切换时调用
 window.initSemifullScrollDetection = initSemifullScrollDetection;
 
+// 动态更新导航栏的当前激活状态
+function updateNavbarActiveState() {
+    const currentPath = window.location.pathname;
+    
+    function standardize(p) {
+        if (!p) return '';
+        let pathOnly = p.split('?')[0].split('#')[0];
+        if (pathOnly.endsWith('/') && pathOnly.length > 1) {
+            pathOnly = pathOnly.slice(0, -1);
+        }
+        return pathOnly;
+    }
+
+    const stdCurrent = standardize(currentPath);
+    const links = document.querySelectorAll('#navbar a[href], #nav-menu-panel a[href]');
+    
+    links.forEach(link => {
+        if (link.classList.contains('navbar-logo')) {
+            return;
+        }
+        const href = link.getAttribute('href');
+        if (link.getAttribute('target') === '_blank' || href?.startsWith('http') && !href.includes(window.location.host)) {
+            return;
+        }
+
+        const stdLink = standardize(link.pathname);
+        if (stdLink === stdCurrent) {
+            link.classList.add('navbar-active');
+            link.setAttribute('aria-current', 'page');
+            
+            const dropdownContainer = link.closest('.dropdown-container');
+            if (dropdownContainer) {
+                const trigger = dropdownContainer.querySelector('.dropdown-trigger');
+                if (trigger) {
+                    trigger.classList.add('navbar-active');
+                }
+            }
+        } else {
+            link.classList.remove('navbar-active');
+            link.removeAttribute('aria-current');
+        }
+    });
+
+    // 额外清除没有激活子级的 trigger 的激活态
+    const allTriggers = document.querySelectorAll('#navbar .dropdown-trigger');
+    allTriggers.forEach(trigger => {
+        const container = trigger.closest('.dropdown-container');
+        if (container) {
+            const hasActiveChild = container.querySelector('.dropdown-item.navbar-active');
+            if (hasActiveChild) {
+                trigger.classList.add('navbar-active');
+            } else {
+                const href = trigger.getAttribute('href');
+                const stdLink = standardize(href || '');
+                if (stdLink !== stdCurrent) {
+                    trigger.classList.remove('navbar-active');
+                }
+            }
+        }
+    });
+}
+
+// 绑定生命周期事件
+document.addEventListener("DOMContentLoaded", updateNavbarActiveState);
+document.addEventListener("astro:page-load", updateNavbarActiveState);
+
+// 首次运行
+updateNavbarActiveState();
+
 // 页面加载完成后初始化滚动检测
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initSemifullScrollDetection);
